@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BudgetBee</title>
+  <link rel="stylesheet" href="style.css"> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+</head>
+<body>
+  <div class="container">
+     <h1> BudgetBee</h1>
+
+    <!-- Balance & Summary -->
+    <div class="summary">
+      <h2>Your Balance: <span id="balance">$0</span></h2>
+      <div class="inc-exp">
+        <div class="income">Income <span id="money-plus">+$0</span></div>
+        <div class="expense">Expense <span id="money-minus">-$0</span></div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form id="form">
+      <input type="text" id="text" placeholder="Enter text...." required>
+      <input type="number" id="amount" placeholder="Enter amount..." required>
+      
+      <label for="category">Category</label>
+      <select id="category" required>
+        <option value="" disabled selected>Select Category</option>
+        <option value="Food">🍔 Food</option>
+        <option value="Travel">✈️ Travel</option>
+        <option value="Shopping">🛒 Shopping</option>
+        <option value="Bills">💡 Bills</option>
+        <option value="Other">📦 Other</option>
+      </select>
+
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <!-- History -->
+    <h3>History</h3>
+    <ul id="list"></ul>
+
+    <!-- Charts -->
+    <h3>Visual Report</h3>
+    <canvas id="expenseChart"></canvas>
+
+    <h3>Monthly Breakdown</h3>
+    <canvas id="monthlyChart"></canvas>
+
+    <h3>Category Breakdown</h3>
+    <canvas id="categoryChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

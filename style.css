@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.icon{
+  height: 20px;
+  width: 50px;
+  size: 100%;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.summary {
+  margin: 20px 0;
+}
+
+.inc-exp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.income {
+  color: #2ecc71;
+}
+
+.expense {
+  color: #e74c3c;
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #2980b9;
+}
+
+ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+ul li {
+  background: #f9f9f9;
+  padding: 10px;
+  border-left: 5px solid;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li.plus {
+  border-color: #2ecc71;
+}
+
+ul li.minus {
+  border-color: #e74c3c;
+}
+
+ul li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
